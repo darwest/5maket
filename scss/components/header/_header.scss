@@ -1,0 +1,50 @@
+@import "scss/common/mixins";
+nav {
+  background-image: url("/img/background/bg_banner.png");
+
+  .logo {
+    display: flex;
+
+    .logo-first-part {
+      font-family: 'Quicksand', sans-serif;
+      @include text-styles(24px, 700, $text-primary-color, none, 58px, 1px);
+      text-transform: uppercase;
+    }
+
+    .logo-second-part {
+      @include flex-container(row, center, center);
+      @include text-styles(8px, 400, $text-primary-color, 0.5, 10px, 0.14em);
+      margin-left: 5px;
+      text-transform: uppercase;
+    }
+  }
+
+  .menu-list {
+    @include flex-container(row, center, center);
+
+    .menu-link {
+      @include link-style(none, #fffefe, 16px, 600);
+      font-family: $font-family;
+      position: relative;
+      padding: 8px;
+    }
+
+    .menu-link::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      width: 80px;
+      height: 2px;
+      background: url('/img/icon/line.png') center center no-repeat;
+      background-size: 70% 100%;
+      transform: translateX(-50%) scaleX(0);
+      transition: transform 0.3s;
+    }
+
+    .menu-link:hover::after {
+      transform: translateX(-50%) scaleX(1);
+    }
+  }
+}
+@import "header-media";
