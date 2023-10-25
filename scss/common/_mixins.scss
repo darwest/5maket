@@ -50,9 +50,10 @@
     font-weight: $font-weight;
   }
   //BUTTON
-  @mixin button-style($background-color, $font-size, $text-color, $border-radius, $padding) {
+  @mixin button-style($background-color, $font-size, $font-weight, $text-color, $border-radius, $padding) {
     background-color: $background-color;
     color: $text-color;
+    font-weight: $font-weight;
     font-size: $font-size;
     border-radius: $border-radius;
     padding: $padding;
