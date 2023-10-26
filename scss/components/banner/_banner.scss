@@ -19,17 +19,15 @@
   .banner-content-text {
     @include flex-container(column, center, flex-start);
     .main-sub-title {
-      @include text-styles(14px, 700, $main-color1, none, 30px, 0.1em);
+      @include text-styles(14px, 700, $main-color-blue, none, 30px, 0.1em);
       text-transform: uppercase;
     }
-    @mixin text-styles($font-size, $font-weight, $color, $opacity, $line-height, $letter-spacing) {
-
     .main-title {
       @include text-styles(48px, 600, $text-primary-color, none, 58px, normal);
     }
 
     .main-text {
-      @include text-styles(18px, 400, $main-color2, none, 0,normal);
+      @include text-styles(18px, 400, $main-color-grey, none, 25px,normal);
       text-transform: none;
     }
 
@@ -37,14 +35,14 @@
       @include flex-container(row, space-between, center);
 
       .button-down {
-        @include button-style($main-color1, 14px, 700, $text-primary-color, 0, 0);
+        @include button-style($main-color-blue, 14px, 700, $text-primary-color, 0, 0);
         @include width-height-value(160px,  52px);
         box-shadow: 0 0 3px 0 rgba(3, 3, 3, 0.1);
         margin-right: 15px;
       }
 
       .button-view {
-        @include button-style(rgba(0, 142, 214, 0.0, 14px, 700, $text-primary-color, 0, 0);
+        @include button-style(rgba(0, 142, 214, 0.0), 14px, 700, $text-primary-color, 0, 0);
         @include width-height-value(160px,  52px);
         background-color: rgba(0, 142, 214, 0.0);
         border: 1px solid rgba(255, 255, 255, 0.2);

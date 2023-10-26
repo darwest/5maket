@@ -1,0 +1,47 @@
+@import "scss/common/mixins";
+
+.list-features-block {
+  height: 575px;
+  @include flex-container(column, flex-start, center);
+
+  .content-list-features-block {
+    .title-list-features-block {
+      @include flex-container(column, center, center);
+      margin-bottom: 55px;
+
+      .subtitle-text-list-features {
+        @include text-styles(14px, 700, $main-color-blue, none, 48px, 0.1em);
+        text-transform: uppercase;
+        margin: 0;
+      }
+
+      .title-text-list-features {
+        @include text-styles(36px, 600, $main-color-black, none, none, normal);
+        text-transform: none;
+      }
+    }
+
+    .features-item {
+      @include flex-container(column, center, center);
+
+
+      .icons-list-features {
+        @include flex-container(column, center, center);
+        @include width-height-value(90px, 90px);
+        border: 1px solid #e0e0e0;
+        border-radius: 50%;
+        background-color: transparent;
+      }
+
+      .title-list-features {
+        @include text-styles(22px, 300, #343434, none, 20px, normal);
+        margin-bottom: 15px;
+      }
+
+      .text-list-features {
+        @include text-styles(16px, 200, $main-color-grey, none, 26px, normal);
+        width: 190px;
+      }
+    }
+  }
+}
