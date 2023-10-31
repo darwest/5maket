@@ -1,12 +1,10 @@
 @import "scss/common/mixins";
 
 .list-features-block {
-  height: 575px;
-  @include flex-container(column, flex-start, center);
+  height:100%;
 
   .content-list-features-block {
     .title-list-features-block {
-      @include flex-container(column, center, center);
       margin-bottom: 55px;
 
       .subtitle-text-list-features {
@@ -23,7 +21,6 @@
 
     .features-item {
       @include flex-container(column, center, center);
-
 
       .icons-list-features {
         @include flex-container(column, center, center);
@@ -45,3 +42,4 @@
     }
   }
 }
+@import "list-features-media";

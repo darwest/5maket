@@ -1,7 +1,8 @@
+@import './common/index';
 @import "components/header/header";
 @import "components/banner/banner";
 @import "components/list-features/list-features";
-@import './common/index';
+@import "components/details-block/details";
 body{
   margin: 0;
 }

@@ -9,9 +9,8 @@
 }
 
 .banner-content {
-  @include flex-container(row, space-between, flex-start);
+  @include flex-container(row, space-around, flex-start);
   flex-wrap: nowrap;
-
   .device-banner {
     @include width-height-value(515px,  519px);
   }

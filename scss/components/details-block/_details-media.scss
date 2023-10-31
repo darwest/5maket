@@ -1,0 +1,108 @@
+@import "scss/common/mixins";
+
+@media (max-width: 1400px) {
+  .details-block-two {
+    .photo-details-block-two {
+      @include width-height-value(550px, 431px);
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+
+  .photo-details-block {
+    @include width-height-value(460px, 600px);
+
+  }
+  .details-block-two {
+    .photo-details-block-two {
+      margin-top: 20px;
+      @include width-height-value(450px, 350px);
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .photo-details-block {
+    @include width-height-value(370px, 450px);
+  }
+  .details-block-two {
+    .photo-details-block-two {
+      @include width-height-value(370px, 290px);
+      margin-top: 60px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .details-block {
+    .content-details-block {
+      flex-direction: column-reverse;
+
+      .photo-content-details-block {
+        text-align: right;
+
+        .photo-details-block {
+          @include width-height-value(310px, 360px);
+        }
+      }
+
+      .text-content-details-block {
+        text-align: center;
+      }
+    }
+  }
+  .details-block-two {
+    .photo-details-block-two {
+      margin: 0 0 50px 0;
+      @include width-height-value(450px, 350px);
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .details-block {
+
+    .text-content-details-block {
+      @include flex-container(column, flex-start, center);
+
+      .сharacteristics-block {
+
+        .сharacteristics-text {
+          font-size: 15px;
+        }
+      }
+
+      .sub-title-details-block {
+        text-align: center;
+
+      }
+
+      .title-details-block {
+        text-align: center;
+      }
+
+      .text-details-block {
+        text-align: center;
+
+      }
+    }
+
+    .content-details-block {
+      .photo-content-details-block {
+        .photo-details-block {
+          @include width-height-value(250px, 310px);
+        }
+      }
+    }
+
+  }
+
+
+  .details-block-two {
+    .photo-details-block-two {
+      margin: 0;
+      @include width-height-value(270px, 250px);
+    }
+  }
+}
