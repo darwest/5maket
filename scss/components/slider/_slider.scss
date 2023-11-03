@@ -1,0 +1,93 @@
+@import "scss/common/mixins";
+
+
+.slider {
+  background-image: url("/img/background/bg_pricingANDplans.png");
+  background-size: cover;
+  background-position: center;
+  @include width-height-value(100%, 640px);
+  background-color: #15141a;
+  @include flex-container(column, flex-start, center);
+
+  .subtitle-text-slider {
+    @include text-styles(14px, 700, $main-color-blue, 100%, 40px, 0.1em);
+    text-transform: uppercase;
+  }
+
+  .title-text-slider {
+    @include text-styles(36px, 600, $main-color-black, 100%, 36px, normal);
+    letter-spacing: normal;
+  }
+
+  .slider-item {
+    @include flex-container(row, space-between, center);
+
+
+    .block-slider {
+      width: 48%;
+      @include flex-container(column, center, flex-start);
+
+      .text-slider {
+        @include text-styles(24px, 400, $text-primary-color, 100%, 32px, 0);
+        font-style: italic;
+      }
+
+      .responses-block {
+        @include flex-container(row, center, center);
+
+        .responses-info {
+          @include flex-container(column, center, flex-start);
+
+          .name {
+            @include text-styles(16px, 400, $text-primary-color, 100%, 28px, 0);
+          }
+
+          .status {
+            @include text-styles(14px, 700, $text-primary-color, 100%, 26px, 0);
+          }
+        }
+      }
+
+    }
+  }
+
+}
+
+.like-what-block {
+  @include width-height-value(100%, 170px);
+  @include flex-container(row, space-between, center);
+  background-color: #15141a;
+
+  .like-what-flex {
+    @include flex-container(row, space-between, center);
+
+    .title-like-what-block {
+      @include text-styles(36px, 600, $text-primary-color, 100%, 48px, normal);
+
+      span {
+        font-weight: 100;
+      }
+    }
+
+    .like-what-block-button {
+      @include flex-container(row, space-between, center);
+      .button-down {
+        @include button-style($main-color-blue, 14px, 700, $text-primary-color, 3px, 0);
+        @include width-height-value(160px, 52px);
+        box-shadow: 0 0 3px 0 rgba(3, 3, 3, 0.1);
+        margin-left: 15px;
+      }
+
+      .button-view {
+        @include button-style(rgba(0, 142, 214, 0.0), 14px, 700, $text-primary-color, 3px, 0);
+        @include width-height-value(160px, 52px);
+        background-color: rgba(0, 142, 214, 0.0);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+
+      }
+
+    }
+  }
+}
+
+@import "slider-media";

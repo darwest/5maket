@@ -6,7 +6,7 @@ nav {
 
     .logo-first-part {
       font-family: 'Quicksand', sans-serif;
-      @include text-styles(24px, 700, $text-primary-color, none, 58px, 1px);
+      @include text-styles(24px, 700, $text-primary-color, 100%, 58px, 1px);
       text-transform: uppercase;
     }
 

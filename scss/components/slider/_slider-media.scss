@@ -1,0 +1,79 @@
+@import "scss/common/mixins";
+
+@media (max-width: 1200px) {
+
+  .like-what-block {
+    .like-what-flex {
+      .title-like-what-block {
+        @include text-styles(30px, 600, $text-primary-color, 100%, 48px, normal);
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+
+  .slider {
+    @include width-height-value(100%, 100%);
+
+    .slider-item {
+      @include flex-container(column, space-between, center);
+      text-align: center;
+      margin-bottom: 60px;
+
+      .block-slider {
+        width: 98%;
+        @include flex-container(column, center, center);
+        margin-bottom: 60px;
+      }
+    }
+  }
+
+
+  .like-what-block {
+    @include flex-container(column, center, center);
+    @include width-height-value(100%, 270px);
+
+    .like-what-flex {
+      @include flex-container(column, center, center);
+
+    }
+  }
+}
+
+@media (max-width: 576px) {
+
+  .slider {
+    @include width-height-value(100%, 100%);
+
+    .slider-item {
+      @include flex-container(column, space-between, center);
+      text-align: center;
+
+      .block-slider {
+        width: 98%;
+        @include flex-container(column, center, center);
+        margin-bottom: 60px;
+
+        .text-slider {
+          font-size: 20px;
+        }
+
+        .responses-block {
+
+          .responses-info {
+
+            .name {
+              font-size: 16px;
+            }
+
+            .status {
+              font-size: 12px;
+            }
+          }
+
+        }
+      }
+    }
+  }
+}
