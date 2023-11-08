@@ -32,7 +32,7 @@
           }
 
           .title-list-features {
-            @include text-styles(22px, 300, #343434, 100%, 20px, normal);
+            @include text-styles(22px, 400, #343434, 100%, 20px, normal);
             margin-bottom: 15px;
           }
 
@@ -44,4 +44,3 @@
       }
     }
 
-    @import "list-features-media";

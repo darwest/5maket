@@ -341,7 +341,7 @@ nav .menu-list .menu-link:hover::after {
 }
 .list-features-block .content-list-features-block .features-item .title-list-features {
   font-size: 22px;
-  font-weight: 300;
+  font-weight: 400;
   color: #343434;
   opacity: 100%;
   line-height: 20px;
@@ -715,6 +715,143 @@ nav .menu-list .menu-link:hover::after {
     font-size: 12px;
   }
 }
+.plans-blocks .content-plans-block .plans {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+}
+.plans-blocks .content-plans-block .plans .plans-title-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.plans-blocks .content-plans-block .plans .plans-subtitle-text {
+  font-size: 14px;
+  font-weight: 700;
+  color: #008ed6;
+  opacity: 100%;
+  line-height: 40px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin: 0;
+}
+.plans-blocks .content-plans-block .plans .plans-title-text {
+  font-size: 36px;
+  font-weight: 600;
+  color: #1a1a1a;
+  opacity: 100%;
+  line-height: 48px;
+  letter-spacing: normal;
+  text-transform: none;
+}
+.plans-blocks .content-plans-block .plans .plans-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.plans-blocks .content-plans-block .plans .plans-block:hover .title-plans-block {
+  color: #008ed6;
+}
+.plans-blocks .content-plans-block .plans .plans-block:hover .price-block {
+  background-color: #008ed6;
+  color: #fafafa;
+}
+.plans-blocks .content-plans-block .plans .plans-block:hover .price-block .text-xs {
+  color: #fafafa;
+}
+.plans-blocks .content-plans-block .plans .plans-block:hover .price-block span {
+  color: #fafafa;
+}
+.plans-blocks .content-plans-block .plans .plans-block:hover .span-block .button-order {
+  background-color: #008ed6;
+  color: #ffffff;
+}
+.plans-blocks .content-plans-block .plans .plans-block .title-plans-block {
+  font-size: 24px;
+  font-weight: 700;
+  color: #1a1a1a;
+  opacity: 100%;
+  line-height: 20px;
+  letter-spacing: normal;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 272px;
+  height: 72px;
+  border: 1px solid #e0e0e0;
+  margin: 0;
+  text-transform: uppercase;
+}
+.plans-blocks .content-plans-block .plans .plans-block .price-block {
+  width: 272px;
+  height: 152px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 60px;
+  border: 1px solid #e0e0e0;
+  margin: 0;
+}
+.plans-blocks .content-plans-block .plans .plans-block .price-block .text-xs {
+  font-size: 28px;
+  font-weight: 600;
+  color: #1a1a1a;
+  opacity: 100%;
+  line-height: 20px;
+  letter-spacing: normal;
+}
+.plans-blocks .content-plans-block .plans .plans-block .price-block span {
+  font-size: 18px;
+  font-weight: 400;
+  color: #999999;
+  opacity: 100%;
+  line-height: 28px;
+  letter-spacing: normal;
+}
+.plans-blocks .content-plans-block .plans .plans-block .span-block {
+  width: 272px;
+  height: 272px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border: 1px solid #e0e0e0;
+  margin: 0;
+}
+.plans-blocks .content-plans-block .plans .plans-block .span-block .description-plans-block {
+  font-size: 18px;
+  font-weight: 400;
+  color: #999999;
+  opacity: 100%;
+  line-height: 26px;
+  letter-spacing: normal;
+  width: 200px;
+}
+.plans-blocks .content-plans-block .plans .plans-block .span-block .description-plans-block span {
+  color: #008ed6;
+}
+.plans-blocks .content-plans-block .plans .plans-block .span-block .button-order {
+  background-color: #ffffff;
+  color: #1a1a1a;
+  font-weight: 700;
+  font-size: 14px;
+  border-radius: 0;
+  padding: 0;
+  cursor: pointer;
+  border: none;
+  width: 162px;
+  height: 52px;
+  cursor: pointer;
+  line-height: 10px;
+  text-transform: uppercase;
+  border: 1px solid #e0e0e0;
+}
+
 body {
   margin: 0;
 }
