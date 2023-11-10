@@ -1,0 +1,47 @@
+@import "variables";
+@import "mixins";
+
+body {
+  font-family: $font-family;
+  width:100%;
+}
+
+.container {
+  max-width: $content-width;
+  margin: 0 auto;
+}
+.hr{
+  @include width-height-value(100%, 1px);
+  background-color: #ededed;
+}
+
+@media (max-width: 1400px) {
+  .container {
+    max-width: 1171px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .container {
+    max-width: 970px;
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    max-width: 750px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 538px;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    max-width: 280px;
+  }
+}
+

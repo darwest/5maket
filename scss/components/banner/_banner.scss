@@ -1,0 +1,59 @@
+@import "scss/common/mixins";
+
+.banner {
+  background-image: url("/img/background/bg_banner.png");
+  background-size: cover;
+  background-position: center;
+  @include width-height-value(100%, 100%);
+  background-color: #15141a;
+
+  .banner-content {
+    @include flex-container(row, space-around, flex-start);
+    flex-wrap: nowrap;
+
+    .banner-content-text {
+      @include flex-container(column, center, flex-start);
+
+      .main-sub-title {
+        @include text-styles(14px, 700, $main-color-blue, 100%, 30px, 0.1em);
+        text-transform: uppercase;
+        margin-top: 19px;
+      }
+
+      .main-title {
+        @include text-styles(48px, 600, $text-primary-color, 100%, 50px, normal);
+      }
+
+      .main-text {
+        @include text-styles(18px, 400, $main-color-grey, 100%, 25px, normal);
+        text-transform: none;
+        width: 88%;
+      }
+
+      .block-button {
+        @include flex-container(row, space-between, center);
+
+        .button-down {
+          @include button-style($main-color-blue, 14px, 700, $text-primary-color, 3px, 0);
+          @include width-height-value(160px, 52px);
+          box-shadow: 0 0 3px 0 rgba(3, 3, 3, 0.1);
+          margin-right: 15px;
+        }
+
+        .button-view {
+          @include button-style(rgba(0, 142, 214, 0.0), 14px, 700, $text-primary-color, 3px, 0);
+          @include width-height-value(160px, 52px);
+          background-color: rgba(0, 142, 214, 0.0);
+          border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+      }
+
+      .device-banner {
+        @include width-height-value(505px, 519px);
+      }
+
+    }
+  }
+}
+
+@import "banner-media";
