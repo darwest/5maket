@@ -77,7 +77,7 @@
             }
           }
           .button-order{
-          @include button-style(#ffffff, 14px, 700, $main-color-black, 0, 0);
+          @include button-style(#ffffff, 14px, 700, $main-color-blue, 0, 0);
           @include width-height-value(162px, 52px);
           cursor: pointer;
           line-height: 10px;
