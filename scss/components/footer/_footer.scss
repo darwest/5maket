@@ -1,0 +1,29 @@
+@import "scss/common/mixins";
+
+.footer {
+  @include width-height-value(100%, 160px);
+  background-color: #15141a;
+  margin-top: -20px;
+
+  .footer-content {
+    @include width-height-value(100%, 160px);
+    @include flex-container(column, center, center);
+
+    .footer-logo {
+      @include flex-container(row, space-between, center);
+      margin-bottom: 20px;
+
+      .footer-img {
+        filter: brightness(30%);
+      }
+
+
+    }
+
+    .text-footer {
+      @include text-styles(14px, 600, #444348, 100%, 18px, normal);
+
+    }
+  }
+
+}

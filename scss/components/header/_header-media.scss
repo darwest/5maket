@@ -1,4 +1,5 @@
 @import "scss/common/mixins";
+
 @media (max-width: 992px) {
   nav {
     .menu-list {
@@ -17,9 +18,10 @@
       font-size: 1.25rem;
       line-height: 1;
       color: #fffefe;
-      background-color: rgb(79 78 78 / 93%);;
+      background-color: $main-color-blue;
       border: 1px solid transparent;
       border-radius: 0.25rem;
+
     }
   }
 }

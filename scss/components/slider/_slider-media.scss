@@ -70,9 +70,29 @@
             .status {
               font-size: 12px;
             }
+
           }
+        }
+      }
+    }
+  }
+
+  .like-what-block {
+
+    .like-what-flex {
+
+      .like-what-block-button {
+        @include flex-container(row, space-between, center);
+
+        .button-down {
+          @include width-height-value(130px, 52px);
+        }
+
+        .button-view {
+          @include width-height-value(130px, 52px);
 
         }
+
       }
     }
   }

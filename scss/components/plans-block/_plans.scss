@@ -1,23 +1,31 @@
 @import "scss/common/mixins";
 
-.plans-blocks{
-  .content-plans-block{
-    .plans{
+.plans-blocks {
+  height: 100%;
+  margin-bottom: 50px;
+
+  .content-plans-block {
+    .plans {
       @include flex-container(row, center, flex-start);
-      .plans-title-block{
+
+      .plans-title-block {
         @include flex-container(column, center, center);
       }
-      .plans-subtitle-text{
+
+      .plans-subtitle-text {
         @include text-styles(14px, 700, $main-color-blue, 100%, 40px, 0.1em);
         text-transform: uppercase;
         margin: 0;
       }
-      .plans-title-text{
+
+      .plans-title-text {
         @include text-styles(36px, 600, $main-color-black, 100%, 48px, normal);
         text-transform: none;
       }
-      .plans-block{
+
+      .plans-block {
         @include flex-container(column, center, center);
+
         &:hover {
           .title-plans-block {
             color: $main-color-blue;
@@ -43,7 +51,8 @@
             }
           }
         }
-        .title-plans-block{
+
+        .title-plans-block {
           @include text-styles(24px, 700, $main-color-black, 100%, 20px, normal);
           @include flex-container(column, center, center);
           @include width-height-value(272px, 72px);
@@ -51,38 +60,45 @@
           margin: 0;
           text-transform: uppercase;
         }
-        .price-block{
+
+        .price-block {
           @include width-height-value(272px, 152px);
           @include flex-container(row, center, center);
           font-size: 60px;
           border: 1px solid #e0e0e0;
           margin: 0;
-          .text-xs{
+
+          .text-xs {
             @include text-styles(28px, 600, $main-color-black, 100%, 20px, normal);
           }
-          span{
+
+          span {
             @include text-styles(18px, 400, #999999, 100%, 28px, normal);
           }
         }
-        .span-block{
+
+        .span-block {
           @include width-height-value(272px, 272px);
           @include flex-container(column, space-around, center);
           border: 1px solid #e0e0e0;
           margin: 0;
-          .description-plans-block{
+
+          .description-plans-block {
             @include text-styles(18px, 400, #999999, 100%, 26px, normal);
             width: 200px;
-            span{
+
+            span {
               color: $main-color-blue;
             }
           }
-          .button-order{
-          @include button-style(#ffffff, 14px, 700, $main-color-blue, 0, 0);
-          @include width-height-value(162px, 52px);
-          cursor: pointer;
-          line-height: 10px;
-          text-transform: uppercase;
-          border: 1px solid #e0e0e0;
+
+          .button-order {
+            @include button-style(#ffffff, 14px, 700, $main-color-blue, 0, 0);
+            @include width-height-value(162px, 52px);
+            cursor: pointer;
+            line-height: 10px;
+            text-transform: uppercase;
+            border: 1px solid #e0e0e0;
           }
         }
       }

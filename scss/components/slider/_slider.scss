@@ -70,6 +70,7 @@
 
     .like-what-block-button {
       @include flex-container(row, space-between, center);
+
       .button-down {
         @include button-style($main-color-blue, 14px, 700, $text-primary-color, 3px, 0);
         @include width-height-value(160px, 52px);
