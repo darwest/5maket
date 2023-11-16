@@ -1,7 +1,7 @@
 @import "scss/common/mixins";
 
 .slider {
-  background-image: url("/img/background/bg_pricingANDplans.png");
+  background-image: url("../img/background/bg_pricingANDplans.png");
   background-size: cover;
   background-position: center;
   @include width-height-value(100%, 640px);
