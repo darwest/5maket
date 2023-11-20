@@ -6,7 +6,7 @@
   .content-list-features-block {
     .title-list-features-block {
       @include flex-container(column, flex-start, center);
-      margin-bottom: 55px;
+      margin-bottom: 30px;
 
       .subtitle-text-list-features {
         @include text-styles(14px, 700, $main-color-blue, 100%, 48px, 0.1em);

@@ -70,6 +70,10 @@
             background-color: rgba(0, 142, 214, 0.0);
             border: 1px solid rgba(255, 255, 255, 0.29);
             text-transform: uppercase;
+            &:hover {
+              border: 1px solid rgba(255, 255, 255, 0.51);
+              box-shadow: 0 0 10px $main-color-blue;
+            }
           }
 
           .block-text-area-button {
@@ -79,17 +83,25 @@
               @include text-styles(14px, 700, $text-primary-color, 100%, 48px, 0.2);
               @include width-height-value(310px, 190px);
               background-color: rgba(0, 142, 214, 0.0);
-              border: 1px solid rgba(255, 255, 255, 0.3);
+              border: 1px solid rgba(255, 255, 255, 0.51);
               text-transform: uppercase;
+              &:hover {
+                border: 1px solid rgba(255, 255, 255, 0.51);
+                box-shadow: 0 0 10px $main-color-blue;
+              }
             }
 
             .button {
               @include text-styles(14px, 700, $text-primary-color, 100%, 38px, 0.2);
               @include width-height-value(160px, 50px);
-              border: 1px solid rgba(255, 255, 255, 0.5);
               text-transform: uppercase;
               background-color: $main-color-blue;
               box-shadow: 0 0 3px 0 rgba(3, 3, 3, 0.1);
+              border: 1px solid rgba(255, 255, 255, 0.45);
+              &:hover {
+                border: 1px solid rgba(255, 255, 255, 0.51);
+                box-shadow: 0 0 10px $main-color-blue;
+              }
             }
           }
         }

@@ -36,15 +36,23 @@
         .button-down {
           @include button-style($main-color-blue, 14px, 700, $text-primary-color, 3px, 0);
           @include width-height-value(160px, 52px);
-          box-shadow: 0 0 3px 0 rgba(3, 3, 3, 0.1);
-          margin-right: 15px;
-        }
+          border: 1px solid rgba(255, 255, 255, 0.45);
 
+          margin-right: 15px;
+          &:hover {
+            border: 1px solid rgba(255, 255, 255, 0.51);
+            box-shadow: 0 0 10px $main-color-blue;
+          }
+        }
         .button-view {
           @include button-style(rgba(0, 142, 214, 0.0), 14px, 700, $text-primary-color, 3px, 0);
           @include width-height-value(160px, 52px);
           background-color: rgba(0, 142, 214, 0.0);
           border: 1px solid rgba(255, 255, 255, 0.2);
+          &:hover {
+            border: 1px solid rgba(255, 255, 255, 0.48);
+            box-shadow: 0 0 10px rgba(153, 153, 153, 0.5);
+          }
         }
       }
 

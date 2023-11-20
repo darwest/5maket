@@ -8,6 +8,33 @@
   background-color: #15141a;
   @include flex-container(column, flex-start, center);
 
+  .carousel-control-prev{
+    left: 0;
+  }
+  .carousel-control-next{
+    right: 0;
+  }
+  .pagination {
+    margin-right: 46%;
+    margin-left: 46%;
+    height: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    .slider-nav {
+      width: 5px;
+      height: 5px;
+      border-radius: 10px;
+      background-color: rgba(255, 255, 255, 0.0);
+      border: 1px solid rgba(255, 255, 255, 0.29);
+
+      &.active {
+        width: 14px;
+        height: 14px;
+        background-color: #ffffff;
+      }
+    }
+  }
   .subtitle-text-slider {
     @include text-styles(14px, 700, $main-color-blue, 100%, 40px, 0.1em);
     text-transform: uppercase;
@@ -74,8 +101,12 @@
       .button-down {
         @include button-style($main-color-blue, 14px, 700, $text-primary-color, 3px, 0);
         @include width-height-value(160px, 52px);
-        box-shadow: 0 0 3px 0 rgba(3, 3, 3, 0.1);
+        border: 1px solid rgba(255, 255, 255, 0.51);
         margin-left: 15px;
+        &:hover {
+          border: 1px solid rgba(255, 255, 255, 0.51);
+          box-shadow: 0 0 10px $main-color-blue;
+        }
       }
 
       .button-view {
@@ -83,7 +114,10 @@
         @include width-height-value(160px, 52px);
         background-color: rgba(0, 142, 214, 0.0);
         border: 1px solid rgba(255, 255, 255, 0.2);
-
+        &:hover {
+          border: 1px solid rgba(255, 255, 255, 0.48);
+          box-shadow: 0 0 10px rgba(153, 153, 153, 0.5);
+        }
       }
 
     }

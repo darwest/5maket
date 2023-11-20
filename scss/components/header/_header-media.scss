@@ -13,15 +13,28 @@
       }
     }
 
-    .navbar-toggler {
-      padding: 2px 6px;
-      font-size: 1.25rem;
-      line-height: 1;
-      color: #fffefe;
-      background-color: $main-color-blue;
-      border: 1px solid transparent;
-      border-radius: 0.25rem;
 
+    .burger-menu {
+      .navbar-toggler-icon{
+        padding: 2px 6px;
+        font-size: 1.25rem;
+        line-height: 1;
+        color: #fffefe;
+        background-color: $main-color-blue;
+        border: 1px solid transparent;
+        border-radius: 0.25rem;
+        span:first-child {
+          margin-top: 4px;
+        }
+
+        span {
+          background-color: #fff;
+          display: block;
+          height: 2px;
+          width: 17px;
+          margin-bottom: 5px;
+        }
+      }
     }
   }
 }

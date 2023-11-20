@@ -27,6 +27,8 @@
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon">
                     <span></span>
+                    <span></span>
+                    <span></span>
                 </span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
@@ -54,7 +56,7 @@
         </nav>
         <!--BANNER-->
         <div class="banner-content row " id="0">
-            <div class="col-lg-6 banner-content-text mt-5">
+            <div class="col-lg-6 banner-content-text my-5">
                 <h3 class="main-sub-title mb-3">INTRODUCING LUCID THEME</h3>
                 <h1 class="main-title text-white">Carefully crafted and beautiful landing page.</h1>
                 <p class="main-text pt-md-3 pt-sm-3 mb-lg-5">Etiam ullamcorper et turpis eget hendrerit.
@@ -83,14 +85,14 @@
                 </div>
             </div>
             <div class="row text-center justify-content-evenly justify-content-xl-center">
-                <div class="col-xl-3 col-lg-3 col-md-6 features-item py-4 px-5">
+                <div class="col-xl-3 col-lg-3 col-md-6 features-item py-5 px-5">
                     <div class="icons-list-features"><img src="img/icon/product_overview/monitor_icon.png" alt="loading"
                                                           width="32"></div>
                     <h2 class="title-list-features  fs-4 pt-4">Responsive</h2>
                     <p class="text-list-features">Fusce fermentum placerat magna ac pharetra. Aliquam euismod elit non
                         ipsum lacinia consectetur.</p>
                 </div>
-                <div class="col-xl-3 col-lg-3 col-md-6 features-item py-4 px-5">
+                <div class="col-xl-3 col-lg-3 col-md-6 features-item py-5 px-5">
                     <div class="icons-list-features"><img src="img/icon/product_overview/settings_icon.png"
                                                           alt="loading"
                                                           width="32"></div>
@@ -98,14 +100,14 @@
                     <p class="text-list-features">Fusce fermentum placerat magna ac pharetra. Aliquam euismod elit non
                         ipsum lacinia consectetur.</p>
                 </div>
-                <div class="col-xl-3 col-lg-3 col-md-6 features-item py-4 px-5">
+                <div class="col-xl-3 col-lg-3 col-md-6 features-item py-5 px-5">
                     <div class="icons-list-features"><img src="img/icon/product_overview/like_icon.png" alt="loading"
                                                           width="32"></div>
                     <h2 class="title-list-features  fs-4 pt-4">Lovely design</h2>
                     <p class="text-list-features">Fusce fermentum placerat magna ac pharetra. Aliquam euismod elit non
                         ipsum lacinia consectetur.</p>
                 </div>
-                <div class="col-xl-3 col-lg-3 col-md-6 features-item py-4 px-5">
+                <div class="col-xl-3 col-lg-3 col-md-6 features-item py-5 px-5">
                     <div class="icons-list-features"><img src="img/icon/product_overview/phone_icon.png" alt="loading"
                                                           width="18"></div>
                     <h2 class="title-list-features  fs-4 pt-4">Mobile Friendly</h2>
@@ -169,12 +171,12 @@
     </div>
 </section>
 <!--SLIDER-->
-<div id="Slider" class="carousel slide slider" data-ride="carousel" id="3">
-    <ol class="carousel-indicators mb-5">
-        <li data-target="#Slider" data-slide-to="0" class="active"></li>
-        <li data-target="#Slider" data-slide-to="1"></li>
-        <li data-target="#Slider" data-slide-to="2"></li>
-        <li data-target="#Slider" data-slide-to="3"></li>
+<div class="carousel slide slider " data-ride="carousel" data-touch="true" id="Slider">
+    <ol class="carousel-indicators pagination mb-5" id="3">
+        <li data-target="#Slider" data-slide-to="0" class="active slider-nav"></li>
+        <li data-target="#Slider" data-slide-to="1" class="slider-nav"></li>
+        <li data-target="#Slider" data-slide-to="2" class="slider-nav"></li>
+        <li data-target="#Slider" data-slide-to="3" class="slider-nav"></li>
     </ol>
     <div class="slider-title-block text-center m-5">
         <p class="subtitle-text-slider text-center m-0 fs-1 ">quality has its price</p>
@@ -303,6 +305,14 @@
             </div>
         </div>
     </div>
+    <a class="carousel-control-prev" href="#Slider" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#Slider" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
 </div>
 
 <!--LIKE WHAT YOU SEE-->
@@ -318,7 +328,7 @@
     </div>
 </div>
 <!--PRICINGS AND PLANS-->
-<div class="plans-blocks" id="4">
+<div class="plans-blocks" id="4" >
     <div class="container">
         <div class="content-plans-block">
             <div class="row plans mb-4 text-center">
@@ -347,7 +357,7 @@
                         <button type="button" class="btn btn-outline-light button-order">ORDER NOW</button>
                     </div>
                 </div>
-                <div class="col-xl-3 col-lg-6 col-md-6 text-center plans-block">
+                <div class="col-xl-3 col-lg-6 col-md-6 mb-5  text-center plans-block">
                     <h3 class="title-plans-block text-center">BUSINESS</h3>
                     <h2 class="price-block"><span class="text-xs">$</span>50<span>/per month</span></h2>
                     <div class="span-block"><p class="description-plans-block">Fusce fermentum placerat magna ac
@@ -443,26 +453,27 @@
     <div class="container">
         <div class="row footer-content pl-3">
             <div class="footer-logo">
-                <div class="col-2">
-                    <img src="img/icon/footer/behance_footer.png" width="20px" alt="loading" class="footer-img">
+                <div class="col-2 photo-container">
+                    <a href="#"><img src="img/icon/footer/behance_footer.png" width="20px" alt="loading" class="footer-img"></a>
                 </div>
-                <div class="col-2">
-                    <img src="img/icon/footer/dribbble_footer.png" width="20px" alt="loading" class="footer-img">
+                <div class="col-2 photo-container">
+                    <a href="#"><img src="img/icon/footer/dribbble_footer.png" width="20px" alt="loading" class="footer-img"></a>
                 </div>
-                <div class="col-2">
-                    <img src="img/icon/footer/twitter_footer.png" width="20px" alt="loading">
+                <div class="col-2 photo-container">
+                    <a href="#">  <img src="img/icon/footer/twitter_footer.png" width="20px" alt="loading" class="footer-img"></a>
                 </div>
-                <div class="col-2">
-                    <img src="img/icon/footer/facebook_footer.png" width="12px" alt="loading" class="footer-img">
+                <div class="col-2 photo-container">
+                    <a href="#"> <img src="img/icon/footer/facebook_footer.png" width="22px" alt="loading" class="footer-img"></a>
                 </div>
-                <div class="col-2">
-                    <img src="img/icon/footer/linkedin_footer.png" width="20px" alt="loading" class="footer-img">
+                <div class="col-2 photo-container">
+                    <a href="#"> <img src="img/icon/footer/linkedin_footer.png" width="20px" alt="loading" class="footer-img"></a>
                 </div>
             </div>
             <div class="text-footer text-center">COPYRIGHT © 2014 LUCID ONEPAGE THEME</div>
         </div>
     </div>
 </footer>
+<script src="main.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
