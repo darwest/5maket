@@ -1,3 +1,7 @@
+document.querySelector('.navbar-toggler-icon').addEventListener('click', function() {
+    this.classList.toggle('cross');
+});
+
 document.addEventListener('DOMContentLoaded', function () {
     let form = document.querySelector('.form');
     form.addEventListener('submit', function (event) {
@@ -52,6 +56,18 @@ document.addEventListener('DOMContentLoaded', function () {
             subjectInput.style.boxShadow = '';
         }
 
+        let messageInput = document.getElementById('message');
+        let messageValue = messageInput.value.trim();
+        if (messageValue === '') {
+            messageInput.placeholder = 'This field is required';
+            messageInput.style.borderColor = 'red';
+            messageInput.style.boxShadow = '0 0 5px red';
+            event.preventDefault();
+            return false;
+        } else {
+            messageInput.style.borderColor = '';
+            messageInput.style.boxShadow = '';
+        }
         return true;
     });
 });

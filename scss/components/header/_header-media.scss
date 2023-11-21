@@ -15,26 +15,50 @@
 
 
     .burger-menu {
-      .navbar-toggler-icon{
-        padding: 2px 6px;
+      .navbar-toggler-icon {
+        position: relative;
+        padding: 5px 6px;
         font-size: 1.25rem;
         line-height: 1;
         color: #fffefe;
         background-color: $main-color-blue;
         border: 1px solid transparent;
         border-radius: 0.25rem;
-        span:first-child {
-          margin-top: 4px;
-        }
+        cursor: pointer;
 
-        span {
+        .line {
           background-color: #fff;
           display: block;
           height: 2px;
           width: 17px;
           margin-bottom: 5px;
+          transition: transform 0.3s ease;
+        }
+
+        .line:nth-child(2) {
+          transition: opacity 0.3s ease;
+        }
+
+        &.cross {
+          .line:first-child {
+
+            width: 20px;
+            transform: rotate(-45deg) translate(3px, -5px);
+          }
+
+          .line:nth-child(2) {
+            opacity: 0;
+          }
+
+          .line:last-child {
+            transform: rotate(45deg) translate(5px, 7px);
+            width: 20px;
+          }
         }
       }
     }
+
+
+
   }
 }

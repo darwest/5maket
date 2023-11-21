@@ -126,23 +126,37 @@ nav .menu-list .menu-link:hover::after {
     padding: 8px 0 9px;
   }
   nav .burger-menu .navbar-toggler-icon {
-    padding: 2px 6px;
+    position: relative;
+    padding: 5px 6px;
     font-size: 1.25rem;
     line-height: 1;
     color: #fffefe;
     background-color: #008ed6;
     border: 1px solid transparent;
     border-radius: 0.25rem;
+    cursor: pointer;
   }
-  nav .burger-menu .navbar-toggler-icon span:first-child {
-    margin-top: 4px;
-  }
-  nav .burger-menu .navbar-toggler-icon span {
+  nav .burger-menu .navbar-toggler-icon .line {
     background-color: #fff;
     display: block;
     height: 2px;
     width: 17px;
     margin-bottom: 5px;
+    transition: transform 0.3s ease;
+  }
+  nav .burger-menu .navbar-toggler-icon .line:nth-child(2) {
+    transition: opacity 0.3s ease;
+  }
+  nav .burger-menu .navbar-toggler-icon.cross .line:first-child {
+    width: 20px;
+    transform: rotate(-45deg) translate(3px, -5px);
+  }
+  nav .burger-menu .navbar-toggler-icon.cross .line:nth-child(2) {
+    opacity: 0;
+  }
+  nav .burger-menu .navbar-toggler-icon.cross .line:last-child {
+    transform: rotate(45deg) translate(5px, 7px);
+    width: 20px;
   }
 }
 .banner {
